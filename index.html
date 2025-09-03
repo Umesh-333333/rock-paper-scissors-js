@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>HELLO!</title>
+    <link  rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+    </head>
+   <body>
+
+    <div class="title">
+        <h1>ROCK , PAPER , SCISSOR GAME</h1>
+    </div>
+
+    <div class="rps">
+      
+         <div class="rock" onclick="
+             var userchoice='rock';
+        
+             var computermove= computerchoice();
+             result(userchoice,computermove,score);
+            
+            " >
+             <img class="image" id="rockimage" src="rock-emoji.png" alt="rock">
+             
+              <input class="placeholder" placeholder="ROCK">
+              
+              <p class="document"></p>
+        </div>
+
+         <div class="paper" onclick="
+            var userchoice='paper';         
+              var computermove=computerchoice();
+             result(userchoice,computermove,score);
+            
+         ">
+            <img class="image" src="paper-emoji.png ">
+             <input class="placeholder" placeholder="PAPER">
+         </div>
+         <div class="scissor" onclick="
+          var userchoice='scissor';
+        
+             var computermove=computerchoice();
+             result(userchoice,computermove,score);
+            
+         ">
+            <img class="image" src="scissor-emoji.png">
+           <input class="placeholder" placeholder="SCISSOR">
+         </div>
+         
+         <div class="reset" onclick="
+          const r=reset(score);
+         
+         ">
+        <img class="image" src="Reset.png">
+          <input class="placeholder" placeholder="RESET">
+         </div>
+    </div>
+    
+    <div class="dom"></div>
+       <p class="js-result"></p>
+       <p class="js-moves">
+        <!-- YOU
+        <img src="rock-emoji.png" class="move-icon">
+        <img src="paper-emoji.png" class="move-icon">
+        COMPUTER -->
+       </p>
+       <p class="js-score"></p>
+   </body>
+</html> 
